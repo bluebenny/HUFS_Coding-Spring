@@ -11,6 +11,8 @@ int main(void)
     printf("문장을 입력해주세요: ");
     scanf("%s", sentence2);
 
+    printf("\n");
+
     printf("첫번째 출력: ");
     puts(sentence1);
 

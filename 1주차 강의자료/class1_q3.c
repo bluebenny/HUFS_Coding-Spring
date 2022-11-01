@@ -6,9 +6,7 @@ int main(void)
 
     n = 5;
     for (int i = 0; i < n; i++)
-    {
         printf("Check1: %d\n", i);
-    }
 
     printf("\n-------------------------------------\n\n");
 
