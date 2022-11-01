@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-int main(void) {
-    int x = 0, a = 0, b = 0, c = 0;
-    double y = 0;
+int main(void)
+{
+    int x, a, b, c;
+    double y;
 
     a = 3;
     b = 4;
