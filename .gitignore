@@ -1,4 +1,12 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
 강의기반자료/
 .DS_Store
 주간일지/
-*.EXEC
