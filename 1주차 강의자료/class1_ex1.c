@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-// 1주차: 버퍼 개념에 관하여
+// 1주차: 버퍼 개념에 관하여(1)
 
 int main(void)
 {

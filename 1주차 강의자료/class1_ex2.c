@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-int main(void) {
+// 1주차: 버퍼 개념에 관하여(2)
+
+int main(void)
+{
     int a, b, c;
     char d[10];
 
