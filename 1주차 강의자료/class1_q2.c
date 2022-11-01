@@ -13,7 +13,7 @@ int main(void) {
 
 
     printf("첫번째 출력: ");
-    printf("%s\n", sentence1);
+    puts(sentence1);
     
     printf("두번째 출력: ");
     puts(sentence2);
