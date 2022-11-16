@@ -15,17 +15,18 @@ public class SecondOne {
 
         System.out.println();
 
-        while(current != 0 && 1 <= num && num <= 1000) {
+        while(current != 0) {
             System.out.print("당신이 생각하는 숫자가 " + (num + current) + "보다 크거나 같습니까?(1/0): ");
             input = scan.nextInt();
 
             if(input == 1) num += current;
             current = (current != 1) ? current / 2 + current % 2 : 0;
-            // if(current == 1) current = 0;
-            // else current = current / 2 + current % 2;
+            // if(current != 1) current = current / 2 + current % 2;
+            // else current = 0;
         }
 
         System.out.println();
         System.out.println("당신이 생각한 숫자는 " + num + "입니다.");
     }
 }
+
