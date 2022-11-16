@@ -1,6 +1,13 @@
 {
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch SecondOne",
+            "request": "launch",
+            "mainClass": "SecondOne",
+            "projectName": "HUFS_Coding-Spring_da499940"
+        },
+        {
             "name": "C/C++: gcc 활성 파일 빌드 및 디버그",
             "type": "cppdbg",
             "request": "launch",

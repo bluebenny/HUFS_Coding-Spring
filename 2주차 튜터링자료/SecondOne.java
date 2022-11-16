@@ -15,7 +15,7 @@ public class SecondOne {
 
         System.out.println();
 
-        while(current != 0) {
+        while(current != 0 && 1 <= num && num <= 1000) {
             System.out.print("당신이 생각하는 숫자가 " + (num + current) + "보다 크거나 같습니까?(1/0): ");
             input = scan.nextInt();
 
