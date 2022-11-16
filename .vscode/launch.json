@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Second_규찬",
+            "request": "launch",
+            "mainClass": "Second_규찬",
+            "projectName": "HUFS_Coding-Spring_da499940"
+        },
+        {
+            "type": "java",
             "name": "Launch SecondOne",
             "request": "launch",
             "mainClass": "SecondOne",
