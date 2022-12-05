@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// 1. 출력이 없는 void형 함수들
+// 1. 리턴이 없는 void형 함수들
 
 void newSector() {
     printf("\n==============\n\n");
@@ -18,14 +18,14 @@ void printString(char* s) {
     printf("\'%s\'를 출력합니다: printString(char* s) 내부\n", s);
 }
 
-// 2. 출력이 있는 함수들
+// 2. 리턴이 있는 함수들
 
 int returnInt30() {
     printf("30을 return합니다: returnInt30() 내부\n");
     return 30;
 }
 
-// 3. 입력과 출력이 모두 있는 함수들
+// 3. 입력과 리턴이 모두 있는 함수들
 
 int sum(int a, int b) {
     printf("%d와 %d를 더해 return합니다: sum(int a, int b) 내부\n", a, b);
@@ -44,7 +44,7 @@ int sumTwice(int a, int b) {
 void main() { // main 함수를 void로 선언할 수 있음
 
     newSector();
-    // 1. 출력이 없는 void형 함수들
+    // 1. 리턴이 없는 void형 함수들
     
     printHello();
     printf("printHello() 함수가 끝났네요.\n");
@@ -67,7 +67,16 @@ void main() { // main 함수를 void로 선언할 수 있음
 
 
     newSector();
-    // 2. 출력이 있는 함수들
+    // 2. 리턴이 있는 함수들
+
+    /*
+     * 리턴이 있는 함수 function()의 내부에는 항상 return 문이 있습니다.
+     * return 뒤에 오는 값이 함수의 값이라고 생각하면 됩니다.
+     *
+     * 바로 다음 예시에서, returnInt30()에는 return 30;이 적혀있습니다.
+     * return 뒤에 오는 값이 30이므로 변수에 30이라는 값을 대입할 때
+     * returnInt30()은 30과 완전히 같은 표햔입니다.
+     */
 
     // 리턴된 값을 변수에 대입할 수 있습니다.
     // 다음 예시에서 "returnInt30()" 은 "30"과 동일한 표현입니다. returnInt30()은 항상 30을 리턴하기 때문입니다.
@@ -77,7 +86,7 @@ void main() { // main 함수를 void로 선언할 수 있음
 
 
     newSector();
-    // 3. 입력과 출력이 모두 있는 함수들
+    // 3. 입력과 리턴이 모두 있는 함수들
 
     int intVar3 = sum(1, 2); // int intVar3 = 1 + 2; 와 동일한 표현입니다.
     printf("intVar3: %d\n\n", intVar3);
@@ -91,7 +100,7 @@ void main() { // main 함수를 void로 선언할 수 있음
     printf("sum(1, 2): %d, 1 + 2 = %d\n", sum(1, 2), 1 + 2);
 
     // 다음 예시에서 sum(1, 2)가 먼저 3으로 리턴되고, sum(3, 3)의 값을 변수에 대입합니다.
-    // 이때 구문의 실행 순서에 주의하세요. 안 쪽에 있는 함수가 먼저 실행됩니다!
+    // 이때 구문의 실행 순서에 주의하세요. 괄호 안 쪽에 있는 함수가 먼저 실행됩니다!
     int intVar4 = sum(sum(1, 2), 3); // int intVar4 = (1 + 2) + 3;
     printf("intVar4: %d\n", intVar4); // 출력은 6
     printf("\n");
