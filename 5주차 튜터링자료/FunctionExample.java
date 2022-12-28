@@ -103,4 +103,6 @@ public class FunctionExample {
         // 함수 내부에서 다른 함수를 호출할 수 있습니다.
         System.out.println("3 + 4 twice: " + sumTwice(3, 4));
     }
+
+    
 }
